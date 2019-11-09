@@ -1,0 +1,17 @@
+package com.pk.client;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.pk.model.Account;
+import com.pk.serviceimpl.AccountServiceImpl;
+public class ClientTest {
+	public static void main(String[] args) {
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Bean.xml");		
+		AccountServiceImpl accountService = context.getBean("accountService",AccountServiceImpl.class);
+		Account account = accountService.getAccountByCustomerId("ABCDE12346");
+		if(account != null)
+		{
+			System.out.println(account.getAccountNumber()+"\t"+account.getAccountDescription());
+		}
+		context.close();
+	}
+}

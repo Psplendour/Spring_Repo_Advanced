@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SpringAOPBeforeAdviceUsingXML&apos; to &apos;SpringAOPBeforeAndAfterAdviceUsingXML&apos;&#x0D;&#x0A;- Original element: &apos;SpringAOPBeforeAdviceUsingXML&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringAOPBeforeAdviceUsingXML&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SpringAOPBeforeAdviceUsingXML&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SpringAOPBeforeAdviceUsingXML" name="SpringAOPBeforeAndAfterAdviceUsingXML" references="true" stamp="1569770806299" version="1.0"/>
+</session>

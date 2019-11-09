@@ -1,0 +1,14 @@
+CREATE TABLE Employee_table
+(
+EmployeeID number(10) not null,
+EmployeeName varchar(255) not null,
+Salary number(10),
+Email varchar(255),
+Gender varchar(255),
+PRIMARY KEY (EmployeeID)
+);
+
+
+
+
+

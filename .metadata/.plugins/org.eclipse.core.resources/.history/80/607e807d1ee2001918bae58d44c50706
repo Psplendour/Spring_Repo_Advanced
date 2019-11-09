@@ -1,0 +1,47 @@
+package com.pk.dao.impl;
+import java.util.List;
+
+import org.hibernate.criterion.DetachedCriteria;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.pk.dao.EmployeeDAO;
+import com.pk.model.Employee;
+@SuppressWarnings("deprecation")
+
+@Repository
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	@Override
+	public void createEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Employee getEmployeeID(int employeeID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int employeeID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateEmployeeEmailById(String newEmail, int employeeID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Employee> getAllEmployeeDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+    
+	
+}

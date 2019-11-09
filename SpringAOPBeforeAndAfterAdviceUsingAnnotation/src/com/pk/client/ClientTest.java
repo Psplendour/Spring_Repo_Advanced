@@ -1,0 +1,14 @@
+package com.pk.client;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.pk.model.Account;
+import com.pk.serviceimpl.AccountServiceImpl;
+
+public class ClientTest {
+	public static void main(String[] args) {
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Bean.xml");		
+		AccountServiceImpl accountService = context.getBean("accountService",AccountServiceImpl.class);
+		accountService.updateAccountBalance(new Account("6539875461","Money Transfer"),30000L);
+		context.close();
+	}
+}

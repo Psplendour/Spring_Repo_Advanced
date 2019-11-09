@@ -1,0 +1,32 @@
+package com.pk.serviceimpl;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import com.pk.model.Account;
+public class AccountServiceImpl {
+	
+	  private static Map<String,Account> map =null;
+	  static
+	  {
+		  map =new HashMap<>();
+		  map.put("ABCDE12345", new Account("4444333322222","Saving Account"));
+		  map.put("12345abcde", new Account("999988887777","Current Account"));
+		  
+	  }
+      public Account getAccountByCustomerId(String customerID)
+      {
+    	  if(customerID == null) {
+    		  
+    	  }
+    	  Account account=null;
+    	 Set<Entry<String, Account>> entrySet = map.entrySet();
+    	 for (Entry<String, Account> entry : entrySet) {
+			if(entry.getKey().equals(customerID));
+			{
+				account= entry.getValue();
+			}
+		}
+		return account;
+      }
+}

@@ -1,0 +1,15 @@
+package com.pk.aop.aspect;
+import org.aspectj.lang.JoinPoint;
+import com.pk.model.Account;
+public class AccountServiceAspect {
+     public void afterReturningAdvice(JoinPoint joinPoint,Account account)
+     {
+    	System.out.println("After Returning method: "+joinPoint.getSignature().getName()+"class: "+joinPoint.getTarget().getClass().getSimpleName());
+        System.out.println(account);
+     }    
+     
+     public void afterThrowingAddvice(JoinPoint joinPoint,Exception excepion){
+    	 System.out.println("After Throwing Exception in method: "+joinPoint.getSignature().getName()+"class: "+joinPoint.getTarget().getClass().getSimpleName());
+         System.out.println(excepion);
+     }
+}

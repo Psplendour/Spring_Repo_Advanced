@@ -1,0 +1,46 @@
+package com.pk.dao.impl;
+import java.util.List;
+
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import com.pk.dao.EmployeeDAO;
+import com.pk.model.Employee;
+public class EmployeeDAOImpl implements EmployeeDAO {
+	@SuppressWarnings("deprecation")
+	private HibernateTemplate hibernateTemplate;
+
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+
+	@Override
+	public void createEmployee(Employee employee) {
+		
+		hibernateTemplate.save(employee);
+	}
+
+	@Override
+	public Employee getEmployeeID(int employeeID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int employeeID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateEmployeeEmailById(String newEmail, int employeeID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Employee> getAllEmployeeDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+   
+}
